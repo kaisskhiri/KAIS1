@@ -1,0 +1,139 @@
+/* fil rouge : selecteur, dimension, coleurs */
+/* text*/
+/* background*/
+/* boxes*/
+/* positioning*/
+/*Flex*/
+/* pseudo class*/
+/* débug*/
+/* responsive*/
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@font-face {
+    font-family: font1;
+    src: url('./assets/Lato-Italic.ttf');}
+
+body {
+
+    font-family: 'font1', sans-serif;
+background: url(./assets/bg.jpg) center fixed;
+height: 10%;
+
+
+}
+
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 22px;
+    font-size: 0,2em;
+    color: rgb(28, 12, 248);
+    text-shadow: 1px 0 0 rgba(161, 238, 252, 0.466);
+    text-align: center;
+    font-family: 'Parisienne', sans-serif;
+   
+
+
+}
+main{
+    background: rgb(172, 252, 248);
+    width: (20%);min-height: 100px;
+    margin: 20px auto;
+    padding: 20PX 30px;
+    box-shadow: 10px 7PX 7px greenyellow;
+ border-radius: 70px 70px 70px 70px;
+
+}
+
+.positioning ,.flexbox ,.grid
+{
+    border: solid 20px red;
+margin-top:  10px ;
+padding: 20px;
+position: relative;
+
+}
+
+h2{
+
+margin: 0;
+
+}
+#circle{
+    height: 60px;
+    width: 60px;
+background: skyblue;
+padding: 40px;
+border-radius: 50%;
+position: absolute;
+top: 10;
+right: 40px;
+}
+#rectangle{
+    height: 15px;
+    width: 100px;
+    background: skyblue;
+    padding:20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+transform: translate(-50%,-50%);
+
+}
+
+ul{
+    display: flex;
+justify-content: space-around;
+padding: 0;
+
+}
+    li{
+
+   
+    list-style-type: none;
+    font-size: 0,5px;
+    height: 170PX;
+    width: 170px;
+background: turquoise;
+   display: flex; 
+   align-items: center;
+  justify-content: center;
+
+  
+}
+#grid-container
+{
+display: grid;
+grid-template-columns: 30% 70%;
+padding: 20px;
+}
+form{ 
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: "i1 i2" "ta ta""bt bt";
+}
+input,texarea{
+margin: 5px;
+height: 45px;
+border: 1px solid rgb(41, 29, 14);
+padding: 10px;
+font-size: 1,1rem;
+font-family: "font1";
+}
+
+
+#firstname{
+    grid-area: i1;
+}
+#surname{
+    grid-area: i2;
+}
+textarea{
+    grid-area: ta;
+    resize: none;
+}
+input[type="submit"]
+{
+grid-area: bt;
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.botleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.botright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.medium {
+  position:absolute;
+  top : 50% ;
+  text-align:center;
+  font-size: 18px;
+  left: 50%;
+}
+
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 10;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>Add some text to an image in the top left corner:</p>
+
+<div class="container">
+  <img src="/nature.png" alt="Cinque Terre" width="1000" height="300">
+  <div class="topleft">CouCou c'est moi </div>
+  <div class="topright">CouCou c'est lui </div>
+  <div class="botleft">CouCou c'est moi encore </div>
+  <div class="botright">CouCou c'est lui encore </div>
+  <div class="medium">CouCou c'est nous</div>
+
+</div>
+
+</body>
+</html>
+
+

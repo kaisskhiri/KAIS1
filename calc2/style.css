@@ -1,0 +1,45 @@
+.app{
+display: grid;
+width: 500px;
+border: 10px;
+background-color: rgb(198, 199, 192);
+
+grid-template-columns: 25% 25% 25% 25% ;
+grid-template-rows: 50px repeat(5 , 35px) ;
+grid-template-areas: 
+"res res res res"
+"1 2 3 reset"
+"4 5 6 reset"
+"7 8 9 reset"
+"0 dot minus plus"
+"equal equal div times";
+   
+border: 5px solid rgb(35, 155, 75);
+border-radius: 10%;
+
+}           
+h2{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1,5em;
+    grid-area: "res";
+    margin-right: 10px;
+}
+button{
+border: 5px solid rgb(32, 14, 37);
+border-radius: 7%;
+margin:5px 5px 5px 5px ;
+cursor: grab;
+transition: 0,3s;
+background-color: aqua;
+
+}
+#CLEAR
+{
+    grid-area: reset;
+
+
+}
+#equal{
+   grid-area: equal;
+}
